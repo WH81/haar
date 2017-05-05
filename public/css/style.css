@@ -1,0 +1,101 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/*----------------------------------------------------------
+	Custom sheet starts here - Global
+------------------------------------------------------------*/	
+body { 
+	 background-color:#000;
+	 margin:0;
+	 padding:0;
+	 height:100%;
+	 color:rgba(224,224,224,1);
+	 }
+		
+
+/*----------------------------------------------------------
+	Links - Global
+-----------------------------------------------------------*/						
+ /* unvisited link */
+a:link {
+		color: rgba(224,224,224,1);
+	   }		  
+
+/* visited link */
+a:visited {
+          color: rgba(224,224,224,1)
+          }
+
+/* mouse over link */
+a:hover {
+        color: rgba(255,0,0,1)
+        }
+
+/* selected link */
+a:active {
+         color: rgba(224,224,224,1);
+         }	  
+
+
+
+
+/*----------------------------------------------------------
+	Navigation menu styles - Global
+------------------------------------------------------------*/				  
+.navbar-inverse {border-radius:0;background-color:rgba(0,0,0,.1);border-bottom:1px solid rgba(224,224,224,1);box-shadow:0 0 15px rgba(0,0,0,1);}
+#mobile-button {margin-right:2em;}
+	
+
+
+
+
+/*----------------------------------------------------------
+	Facebook icon in the navigation header section - Global
+------------------------------------------------------------*/
+#fb-menu-icon {border:none; background:none;}
+
+.fa-facebook {color:rgba(224,224,224,1); font-size:160%;}
+
+.fa-facebook:hover {color:rgba(132,132,132,1);}
+
+
+
+
+/*----------------------------------------------------------
+	Hite Autobody & Restoration main logo - Global
+------------------------------------------------------------*/		
+figure {margin-top:-15px;}
+#logo-hite-main {
+				padding:1.5em .5em;
+				background-image:url(../images/general/diamond02.png);
+		 		background-position: left top, right bottom;	
+		 		background-attachment:fixed;
+		 		background-repeat:repeat-x;
+				}	
+	
+				
+/*---------------------------------------------------------
+	Main section
+-----------------------------------------------------------*/
+.page{background:none;margin:1em 0;}
+
+
+
+
+/*----------------------------------------------------------
+	Address links under location - Global
+-----------------------------------------------------------*/						
+
+
+
+/*---------------------------------------------------------
+	Footer section
+-----------------------------------------------------------*/
+
+footer {background:rgba(0,224,224,1);padding:1.5em;}
+footer .container-fluid {background:silver;}
+footer > nav {padding:1em .5em 0 .5em;background-color:transparent;}
+footer img {background:none;}
+footer .container nav ul {background:none;padding:.2em;}
+footer nav ul li {background:none;padding:.2em;}
+footer h6 {text-align:center;background:none;padding:0;}

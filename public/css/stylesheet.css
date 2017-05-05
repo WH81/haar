@@ -1,0 +1,680 @@
+@charset "UTF-8";
+/* CSS Document */
+@import 'https://fonts.googleapis.com/css?family=Open+Sans:400,700,800';
+
+/*----------------------------------------------------------
+	Custom sheet starts here - Global
+------------------------------------------------------------*/	
+html,body{
+  	     height: 100%;
+	     }
+		 
+body { 
+	 font-family:'Open Sans', sans-serif;
+	 line-height:1.5em;
+	 background-color:rgba(0,0,0,1);
+	 background-image:url(../images/content/semi_transparent_bg_car.png);
+	 background-size:cover;
+	 background-attachment:fixed;
+	 margin:0;
+	 padding-top:50px; 
+	 }
+		
+/*----------------------------------------------------------
+	Hite Autobody & Restoration main logo - Global
+------------------------------------------------------------*/		
+#logo-hite-main {
+				padding:.5em .5em;
+				background-image:url(../images/general/diamond02.png);
+		 		background-position: left top, right bottom;	
+		 		background-attachment:fixed;
+		 		background-repeat:repeat-x;
+				}	
+				
+.logo { 
+		margin:0 auto; 
+		padding:.5em; 
+		min-width:175px; 
+		width:auto; 
+		max-width:400px; 
+		height:auto; 
+	   }
+
+				
+/*----------------------------------------------------------
+	Document layout - Global
+------------------------------------------------------------*/					
+.wrapper { 
+		 margin:0;
+		 padding:0;
+		 }
+
+.main {
+		background-color:rgba(0,0,0,.50);
+		border-left:0px solid rgba(224,224,224,1);
+		border-right:0px solid rgba(224,224,224,1);	
+		box-shadow: 0px 0px 20px rgba(224,224,224,.65);
+      }
+		
+		 
+/*----------------------------------------------------------
+	Address links under location - Global
+-----------------------------------------------------------*/						
+ /* unvisited link */
+a:link {
+	   color:rgba(224,224,224,1);
+	   }		  
+
+/* visited link */
+a:visited {
+          color:rgba(224,224,224,1)
+          }
+
+/* mouse over link */
+a:hover {
+        color:rgba(132,132,132,1)
+        }
+
+/* selected link */
+a:active {
+         color:rgba(224,224,224,1);
+         }	  
+
+
+ 
+/*----------------------------------------------------------
+	Navigation menu styles - Global
+------------------------------------------------------------*/				  
+.nav {
+	  font-family:'Open Sans', sans-serif;
+	  font-size:1.3em;
+	  background-color:rgba(0,0,0,1);
+	  }
+
+.navbar {
+		 background-color:rgba(0,0,0,1); 
+		 border-bottom:1px ridge rgba(224,224,224,1);
+		 border-top:none;
+		 border-left:none;
+		 border-right:none;
+		 border-radius:0;
+		 text-align:center;
+		}
+
+.navbar-nav li {
+				font-size:1.2em;
+				color:rgba(224,224,224,1);
+				}
+
+.navbar-nav li:hover {
+					  color:rgba(0,0,0,1);
+					  background-color:rgba(224,224,224,1);
+					 }
+
+
+/*----------------------------------------------------------
+	Facebook icon in the navigation header section - Global
+------------------------------------------------------------*/
+#fb-menu-icon {
+			   border:none; 
+			   background:none;
+			   }
+
+.fa-facebook {
+			  color:rgba(224,224,224,1); 
+			  font-size:160%;
+			  }
+
+.fa-facebook:hover {
+					color:rgba(132,132,132,1);
+				   }
+				   
+
+		
+/*----------------------------------------------------------
+	Jumbotron carousel marketing banner styles - Global
+------------------------------------------------------------*/
+.jumbotron { margin:0; padding:0; }
+
+
+
+
+/*----------------------------------------------------------
+	 Carousel styles - Global
+-----------------------------------------------------------*/
+.img-expand { width:100%; height:auto; }
+
+
+
+/*----------------------------------------------------------
+	 Mission statement blockquote styles - Global
+-----------------------------------------------------------*/
+	
+
+/*----------------------------------------------------------
+	 Content section styles - Global
+-----------------------------------------------------------*/
+section { 
+		font-size:150%; 
+		}
+		
+h1 {
+	font-size:300%;
+    /*background-color:rgba(0,0,0,.1);
+	border:solid 1px rgba(255,255,255,1);*/
+	}		
+					  
+
+
+/*----------------------------------------------------------
+	 Services offered styles - Global
+-----------------------------------------------------------*/
+.list {
+	   list-style-type:square;
+	   list-style-position:outside;
+	  }
+	  
+.list li  {
+		   line-height:1.7em; 
+		  }	  
+		
+#img-heath {
+			padding:1em .2em;
+		   }
+		   
+		   
+		   
+
+		 
+		 
+		 
+/*----------------------------------------------------------
+	 Before and after section - Global
+-----------------------------------------------------------*/
+#accordion {
+			padding-right:.5em;
+			padding-left:.5em;
+			}
+
+.panel-default {
+				margin-top:1em;
+			    background:transparent;	 
+			   }
+			   
+.panel-body img {	
+				 padding:0;
+				 margin:0;
+				 text-align:center;
+				 width:100%;
+				 max-width:575px;
+				 height:auto;
+				 }			
+				   
+			   
+ /* unvisited link */
+#accordion a:link {
+				  color:rgba(0,0,0,1);
+	   		  	  }		  
+
+/* visited link */
+#accordion a:visited {
+          		  	 color:rgba(0,0,0,1);
+          			 }
+
+/* mouse over link */
+#accordion a:hover {
+        			color:rgba(132,132,132,1);
+        		   }
+
+/* selected link */
+#accordion a:active {
+         			color:rgba(0,0,0,1);
+         			}				 
+
+/*----------------------------------------------------------
+	 Facebook page - Global
+-----------------------------------------------------------*/
+.fb-page {
+	      padding:1em;
+		 }
+		  
+		  
+/*----------------------------------------------------------
+	 Footer - Global
+-----------------------------------------------------------*/
+footer {
+		background-color:rgba(224,224,224,1);
+		background-image:url(../images/general/bg-footer.png);
+		background-position:left top, right bottom;	
+		background-attachment:fixed;
+		background-repeat:repeat-x;
+		padding:1em;
+		height:100% !important;
+	   }
+
+footer img {
+			background:none;
+			margin-top:1em;
+			color:rgba(0,0,0,1);
+			}
+			
+footer ul li {
+			  font-size:1em;
+			  padding:.2em;
+			  color:rgba(0,0,0,1);
+			  }
+
+footer > h6 {
+			text-align:center;
+			padding:.2em;
+			color:rgba(0,0,0,1);
+			}
+		 	  
+ /* unvisited link */
+footer a:link {
+				color:rgba(0,0,0,1);
+	   		  }		  
+
+/* visited link */
+footer a:visited {
+          		  color:rgba(0,0,0,1)
+          		 }
+
+/* mouse over link */
+footer a:hover {
+        		color:rgba(132,132,132,1)
+        	   }
+
+/* selected link */
+footer a:active {
+         		color:rgba(0,0,0,1);
+         		}	  
+
+
+
+/*----------------------------------------------------------
+	Extra Small devices (phones, 320px and up) - Mobile
+-----------------------------------------------------------*/
+@media screen and (min-width: 320px) { 
+
+/*----------------------------------------------------------
+	Custom mobile sheet starts here - Mobile
+------------------------------------------------------------*/			
+
+	 
+/*----------------------------------------------------------
+	 Navigation menu button dropdown - Mobile
+-----------------------------------------------------------*/	
+.navbar { 
+		 margin:0; 
+		 padding:0; 
+		 background-color:rgba(0,0,0,1); /* Background color when mobile nav button is clicked open behind link text. */
+		 }
+   
+.icon-bars {
+			background-color:rgba(224,224,224,0); 
+		   }  
+
+.navbar-default .navbar-toggle .icon-bar {
+									     padding:1.5px; 
+										 margin:3px; 
+										 background-color:rgba(224,224,224,1);
+										 }  
+ 
+.navbar-default .navbar-toggle:hover .icon-bar {
+												padding:1.5px; 
+										 		margin:3px; 
+												background-color:rgba(0,0,0,1);
+												}
+.navbar-nav li {padding:1em;}
+
+	 
+/*----------------------------------------------------------
+	Hite Autobody & Restoration main logo - Mobile
+------------------------------------------------------------*/		
+section#logo-hite-main {
+						background-image:url(../images/general/diamond02-mobile.jpg);
+						background-position:left top, right bottom;	
+						background-attachment:fixed;
+						background-repeat:repeat-x;
+						}
+
+section#logo-hite-main > img {
+							  width:70%;
+							  height:auto;
+							  padding:1em .5em .5em .5em; 
+							 }
+
+
+/*----------------------------------------------------------
+	 Carousel section - Mobile
+-----------------------------------------------------------*/		 
+.carousel-caption {
+				   background-image:url(../images/general/diamond02-mobile.jpg);
+				   background-repeat:repeat-x;
+				  }
+
+.carousel-caption-header {
+		   				  padding:0 .5em 0 .5em;
+		                  font-size:2em;
+						  color:rgba(224,224,224,1);
+						  letter-spacing:2px;
+	      				 }
+		  
+.carousel-caption-paragraph {
+						    padding:0 .5em 1em .5em;
+						    font-size:1em;
+						    color:rgba(224,224,224,1);
+						    font-style:italic;
+	      				    }
+		
+.carousel-control {
+				  position:absolute;	
+				  top:-5.8em;
+	 	          font-size:150%;
+	      		  }  
+
+.carousel-caption {
+				  display:block;
+				  position:relative;
+				  top:0; 
+				  left:0;	
+				  }
+				  
+		
+/*----------------------------------------------------------
+	 Learn more button in carousel - Mobile
+-----------------------------------------------------------*/			
+.carousel-caption button {
+				  		  display:none;
+				         }
+						 
+						 
+.btn-learn-more {
+				background-color:rgba(0,0,0,.4); 
+				border:2px solid rgba(224,224,224,1);
+				color:rgba(224,224,224,1);
+				}				  
+
+
+	 
+	 
+/*----------------------------------------------------------
+	 Document layout - Mobile
+-----------------------------------------------------------*/	
+h1, h2, h3, h4, h5, h6, p, blockquote, cite, li {text-align:center;}
+h1 {font-size:2em;}
+h3 {font-size:1.3em;}
+.container {
+	 	    margin:0 auto;
+			padding:0;
+			}
+
+.row {
+	  margin:0;
+	  padding:0;
+	  }
+
+.box-level {
+			display:block;	
+     		line-height:2.5em;
+      		font-size:.8em; 
+			color:rgba(224,224,224,1);
+			text-align:center;
+		   }
+	
+			  
+.box-level > section > h1 {
+						 /*background-image:url(../images/general/diamond02-mobile.jpg);
+						   background-repeat:repeat;
+						   background-color:rgba(224,224,224,.65);
+						   border-top:1px solid #fff;
+					       border-bottom:5px solid #fff;*/
+				    	   color:rgba(224,224,224,1);
+						   text-shadow:2px 1px 2px rgba(0,0,0,1);
+						  }
+			  										 
+.box-level > section > blockquote {
+								   line-height:2.5em;
+							      }
+		  					
+.padding-bottom {
+		         padding-bottom:2em; /* Padding for the connect and before & after sections above footer section */
+				}							
+												 
+/*----------------------------------------------------------
+	 Mission statement text - Mobile
+-----------------------------------------------------------*/						
+blockquote p cite {
+				  font-size:.80em;
+				  font-style:italic;
+      			  }   		 
+
+
+
+/*----------------------------------------------------------
+	 Services section - Mobile
+-----------------------------------------------------------*/
+img#img-heath {
+			   padding-top:1.7em;
+              }
+			  
+#service > ul > li {
+					 list-style-type:square;
+					 list-style-position:inside;
+					 }
+					   
+h1 {padding-top:1.5em;}	
+
+
+/*----------------------------------------------------------
+	 Address section - Mobile
+-----------------------------------------------------------*/
+								
+						
+										
+/*----------------------------------------------------------
+	 Google map JavaScript API - Mobile
+-----------------------------------------------------------*/						
+div#map-Container {
+				  width:100%;
+				  height:100%;
+				  }
+			  
+#hite-map {
+		   width:100%;
+		   height:400px;
+		  }	  
+		  
+		  
+/*----------------------------------------------------------
+	 Footer - Mobile
+-----------------------------------------------------------*/
+		
+footer img {
+			text-align:center;
+			}
+			
+footer ul {
+			margin-bottom:0;
+			padding:1em 0 0 0;
+		  }
+		  
+footer nav ul li {
+				  text-align:center;
+				  font-size:1em;
+				  padding:.2em;
+				  }
+	
+}
+
+
+/*----------------------------------------------------------
+	Small devices (tablets, 768px and up) 
+-----------------------------------------------------------*/
+@media screen and (min-width: 768px) { 
+
+/*----------------------------------------------------------
+	 Tablet navigation section 
+-----------------------------------------------------------*/	
+.container { 
+			min-width:768px; 
+			width:98%; 
+			max-width:991px; 
+			}
+
+/*----------------------------------------------------------
+	 Navigation section - Medium devices
+-----------------------------------------------------------*/		 
+
+.navbar-nav li {padding:0;}
+
+.navbar .navbar-nav {
+					display:inline-block;
+					float:none;
+    				}
+	
+#menu > li {
+			font-size:1em;
+   		   }
+	
+/*----------------------------------------------------------
+	 Services offered styles - Tablets
+-----------------------------------------------------------*/ 
+#service > ul > li {
+					list-style-type:square;
+					list-style-position:inside;
+					line-height:1.7em;
+					}
+	    
+		
+img#img-heath {
+			   padding:1em .2em;
+		      }								
+
+
+		 	   
+/*----------------------------------------------------------
+	 Footer styles - Tablets
+-----------------------------------------------------------*/		  	   
+footer img {
+	       float:right;
+		   }
+
+footer nav ul li {
+	             text-align:left;
+				 }
+
+footer nav { 
+           border-left:1px groove rgba(0,0,0,.3);
+		   padding-left:1em;
+		   }
+}
+
+/*----------------------------------------------------------
+	Medium devices (desktops, 992px and up)
+-----------------------------------------------------------*/
+@media screen and (min-width: 992px) { 
+/*----------------------------------------------------------
+	 Tags section - Medium devices
+-----------------------------------------------------------*/		 
+h1, h2, h3, h4, h5, h6, p, address, blockquote, cite, li {text-align:left;}
+h1 {font-size:3em;}
+h3 {font-size:1.5em;}
+
+
+
+/*----------------------------------------------------------
+	 Carousel section - Medium devices
+-----------------------------------------------------------*/		 
+.carousel-caption {
+				   background:none;
+				   }
+
+h3.carousel-caption-header, p.carousel-caption-paragraph {
+														  background:none;
+														  text-align:center;
+													     }
+
+h3.carousel-caption-header {
+		   				    padding:0 .5em 0 .5em;
+		                    font-size:2.5em;
+							font-weight:700;
+						    color:rgba(224,224,224,1);
+						    letter-spacing:2px;
+	      				   }
+		  
+p.carousel-caption-paragraph {
+						     padding:0 .5em 1em .5em;
+						     font-size:1em;
+						     color:rgba(224,224,224,1);
+						     font-style:italic;
+	      				     }
+		
+.carousel-control {
+				  position:absolute;	
+				  top:0;
+	 	          font-size:150%;
+	      		  }  
+
+.carousel-control {
+				  }
+				  
+.carousel-caption {
+ 				   background-color:rgba(0,0,0,0.65); 
+				   background:-moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.65) 100%); /* FF3.6-15 */
+				   background:-webkit-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 100%); /* Chrome10-25,Safari5.1-6 */
+				   background:linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+				   filter:progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#a6000000',GradientType=0 ); /* IE6-9 */
+				   margin-top:-225px;
+				   font-size:145%;
+				  }	
+				  
+.carousel-caption > h3 {
+						text-shadow:0px 4px 4px #000; 
+						}
+						
+.carousel-caption > p {
+					   text-shadow:1px 2px 0px #000;
+					   }				  
+
+
+
+/*----------------------------------------------------------------
+	Jumbotron carousel marketing banner styles - Medium devices
+------------------------------------------------------------------*/
+.jumbotron { margin:0; padding:0; }
+
+
+
+.container { 
+			min-width:992; 
+			width:98%; 
+			max-width:1199px; 
+			}
+
+					   
+/*----------------------------------------------------------
+	 Services offered styles - Medium device
+-----------------------------------------------------------*/ 					   
+#service > ul > li {
+					list-style-type:square;
+					list-style-position:outside;
+					line-height:1.7em;
+					margin-left:1em;
+					}					   
+								
+
+}
+
+/*----------------------------------------------------------
+	Large devices (large desktops, 1200px and up) 
+-----------------------------------------------------------*/
+@media screen and (min-width: 1200px) { 
+.container { 
+			min-width:1200px; 
+			width:98%; 
+			max-width:1300px; 
+			}
+
+}

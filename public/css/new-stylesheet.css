@@ -48,7 +48,12 @@ html, body {
 #address > .panel-heading, #connect > .panel-heading { 
 													   background-color: transparent; 
 													   border: none; 
+<<<<<<< HEAD
+                                                      }
+													  
+=======
                                                       }													  
+>>>>>>> 93da7e459228661b49221e9cdbb4c09466fa3e56
 
 /*--------------------------------------------------------------------
 	Panels - Global
@@ -853,6 +858,10 @@ blockquote, p {
 				font-size:1em;
               }																								   
 																					  														 
+<<<<<<< HEAD
+h2 { 
+    padding-top: 2em; 
+=======
 h2 { 																  
 	padding: 1em;
 	padding-bottom: 0.7em;
@@ -861,6 +870,7 @@ h2 {
 	border-bottom: 3px outset #e0e0e0;
 	background-color: rgba(255,255,255,0.1);
 	text-shadow: 2px 2px 2px rgba(0,0,0,1);
+>>>>>>> 93da7e459228661b49221e9cdbb4c09466fa3e56
    }														 
 	   
 .glyphicon { 
