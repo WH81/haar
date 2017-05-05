@@ -19,6 +19,50 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <!-- Bootstrap, css, javascript, jquery CDN links in this page are located here: https://gist.github.com/planetoftheweb/884b9bff2f84d4134020 -->
     <link rel="stylesheet" href="css/new-stylesheet.css">
+    
+    <script>
+    	//Variable to hold request
+		var request;
+		
+		// Bind to the submit event of our form
+		$("#contact-form").submit(function(event) {
+			
+			// Prevent default posting of form - put here to work in case of errors
+			event.preventDefault();
+			
+			// Abort any pending request
+			if (request) {
+				request.abort();
+				}
+				
+			// Setup some local variables
+			var $form = $(this);	
+		
+			// Let's select and cache all the fields
+			var $inputs = $form.find("input, select, button, textarea");
+			
+			// Serialize the data in the form
+			var serializedData = $form.serialize();
+			
+			// Let's disable the inputs for the duration of the Ajax request.
+			// Note: we disable elements AFTER the form data has been serialized.
+			// Disabled form elements will not be serialized.
+			$inputs.prop("disabled", true);
+			
+			// Fire off the request to /form.php
+			$.ajax({
+				url: "process_mail.php",
+				type: "post",
+				data: serializedData,
+				success: function(result){
+					// $("#message_placeholder").html(result);
+					alert('Success!');
+					}
+				});
+				
+			}
+    
+    </script>
     <title>Hite Autobody and Restoration | Official Site</title>
 </head>
 
