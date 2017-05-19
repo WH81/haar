@@ -10,7 +10,7 @@ $customer = $_POST['customer']; // required
 $comments = $_POST['comments']; // required
 
 $message = '<html><body>';
-$message .= '<img class="logo img-responsive" src="images/logos/logo.svg" alt="Hite Autobody and Restoration">';
+$message .= '<img class="logo img-responsive" src="images/logos/logo.svg" alt="haar">';
 $message .= '<table style="border-color: #666;" cellpadding="5">';
 $message .= "<tr style='background: #e0e0e0;'><td><strong>Name:</strong> </td><td>" . strip_tags($_POST['name']) . "</td></tr>";
 $message .= "<tr><td><strong>Email:</strong> </td><td>" . strip_tags($_POST['email']) . "</td></tr>";
