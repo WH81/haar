@@ -6,7 +6,7 @@ $phone = $_POST['phone']; // required
 $make = $_POST['make'];
 $model = $_POST['model'];
 $year = $_POST['year'];
-$customer = $_POST['customer'];
+$customer = $_POST['customer']; // required
 $comments = $_POST['comments']; // required
 
 $message = '<html><body>';
@@ -23,21 +23,22 @@ $message .= "<tr><td><strong>Comments:</strong> </td><td>" . strip_tags($_POST['
 $message .= "</table>";
 $message .= '</body></html>';
 
-$to = 'Hite Autobody & Restoration <waynehite@yahoo.com>';
+$to = 'example@yahoo.com';
 $subject = "Service inquiry from " . $name . ".";
+$from = 'Name here <example@yahoo.com>';
 
-$headers = 'From: Hite Autobody & Restoration <customerservice@hiteautobodyandrestoration.com>\r\n' . 
-$headers .= 'Reply-To: ' . $email . '\r\n' . 
-$headers .= 'X-Mailer: PHP/' . phpversion();
-$headers .= 'MIME-Version: 1.0\r\n';
-$headers .= 'Content-Type: text/html; charset=ISO-8859-1\r\n';		   
+$headers = 'From: {$from}\n'; 
+$headers .= 'Reply-To: {$email}\n'; 
+$headers .= 'X-Mailer: PHP/' .phpversion(). '\n';		 
+$headers .= 'MIME-Version: 1.0\n';
+$headers .= 'Content-Type: text/html; charset=iso-8859-1\n';	
 		   
-$authorized = '-fwaynehite@yahoo.com';
+$authorized = '-fexample@yahoo.com';
 
-if (mail($to, $subject, $message, $headers)) {
-	print '<h3>Hello, ' . $name . '.</h3>' . '<h4>Thank you for contacting Hite Autobody & Restoration!</h4>' . '<h4>We have received your message and will reply as soon as possible.</h4>';
-	} else {
-	print "<h4>Sorry, your mail has not sent. Please try again.</h4>";	
-	}
+$result = mail($to, $subject, $message, $headers, $authorized);
+
+echo $result ? '<h3>Hello, ' . $name . '.</h3>' . '<h4>Thank you for contacting  Autobody & Restoration!</h4>' . '<h4>We have received your message and will reply as soon as possible.</h4>' : '<h4>Sorry, your mail has not sent. Please try again.</h4>';
+
+
 
 
