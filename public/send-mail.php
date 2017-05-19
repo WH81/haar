@@ -10,7 +10,7 @@ $customer = $_POST['customer'];
 $comments = $_POST['comments']; // required
 
 $message = '<html><body>';
-$message .= '<img class="logo img-responsive" src="images/logos/logo.svg" alt="Hite Autobody and Restoration">';
+$message .= '<img class="logo img-responsive" src="images/logos/logo.svg" alt="name here">';
 $message .= '<table style="border-color: #666;" cellpadding="5">';
 $message .= "<tr style='background: #e0e0e0;'><td><strong>Name:</strong> </td><td>" . strip_tags($_POST['name']) . "</td></tr>";
 $message .= "<tr><td><strong>Email:</strong> </td><td>" . strip_tags($_POST['email']) . "</td></tr>";
@@ -23,19 +23,19 @@ $message .= "<tr><td><strong>Comments:</strong> </td><td>" . strip_tags($_POST['
 $message .= "</table>";
 $message .= '</body></html>';
 
-$to = 'Hite Autobody & Restoration <waynehite@yahoo.com>';
+$to = 'my name <email@example.com>';
 $subject = "Service inquiry from " . $name . ".";
 
-$headers = 'From: Hite Autobody & Restoration <customerservice@hiteautobodyandrestoration.com>\r\n' . 
+$headers = 'From: customerservice@example.com\r\n' . 
 $headers .= 'Reply-To: ' . $email . '\r\n' . 
 $headers .= 'X-Mailer: PHP/' . phpversion();
 $headers .= 'MIME-Version: 1.0\r\n';
 $headers .= 'Content-Type: text/html; charset=ISO-8859-1\r\n';		   
 		   
-$authorized = '-fwaynehite@yahoo.com';
+$authorized = '-femail@example.com';
 
 if (mail($to, $subject, $message, $headers)) {
-	print '<h3>Hello, ' . $name . '.</h3>' . '<h4>Thank you for contacting Hite Autobody & Restoration!</h4>' . '<h4>We have received your message and will reply as soon as possible.</h4>';
+	print '<h3>Hello, ' . $name . '.</h3>' . '<h4>Thank you for contacting us!</h4>' . '<h4>We have received your message and will reply as soon as possible.</h4>';
 	} else {
 	print "<h4>Sorry, your mail has not sent. Please try again.</h4>";	
 	}
