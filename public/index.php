@@ -15,9 +15,10 @@
 <div class="carousel-caption">
 <h3 class="text-marketing carousel-caption-header"><?php echo strToUpper('Experience') ?></h3>
 <p class="carousel-caption-paragraph">Satisfying customers for over 27 years.</p>
-<a href="#contact-popup" data-rntoggle="modal">
+<!--<a href="#contact-popup" data-rntoggle="modal">
 <button type="button" class="btn btn-default text-uppercase carousel-space btn-learn-more">Learn more</button>
 </a>
+-->
 </div> <!-- carousel-caption -->
 </div> <!-- item active marquee-bottom-gradient -->
 
@@ -26,9 +27,10 @@
 <div class="carousel-caption">
 <h3 class="text-marketing carousel-caption-header"><?php echo strToUpper('Quality') ?></h3>
 <p class="carousel-caption-paragraph">Premium paint finishes & body work.</p>
-<a href="#contact-popup" data-toggle="modal">
+<!--<a href="#contact-popup" data-toggle="modal">
 <button type="button" class="btn btn-default text-uppercase carousel-space btn-learn-more">Learn more</button>
 </a>
+-->
 </div>  <!-- carousel-caption -->
 </div> <!-- item marquee-bottom-gradient -->
 
@@ -37,9 +39,10 @@
 <div class="carousel-caption">
 <h3 class="text-marketing carousel-caption-header"><?php echo strToUpper('Detail') ?></h3>
 <p class="carousel-caption-paragraph">Exceptional restoration capabilities.</p>
-<a href="#contact-popup" data-toggle="modal">
+<!--<a href="#contact-popup" data-toggle="modal">
 <button type="button" class="btn btn-default text-uppercase carousel-space btn-learn-more">Learn more</button>
 </a>
+-->
 </div> <!-- carousel-caption -->
 </div> <!-- item marquee-bottom-gradient -->
 
@@ -48,9 +51,10 @@
 <div class="carousel-caption">
 <h3 class="text-marketing carousel-caption-header"><?php echo strToUpper('Contact us today!') ?></h3>
 <p class="carousel-caption-paragraph"><a href="contact.php" target="_self">Shedule your appointment!</a></p>
-<a href="#contact-popup" data-toggle="modal">
+<!--<a href="#contact-popup" data-toggle="modal">
 <button type="button" class="btn btn-default text-uppercase carousel-space btn-learn-more">Learn more</button>
 </a>
+-->
 </div> <!-- carousel-caption -->        
 </div> <!-- item marquee-bottom-gradient --> 
 </div> <!-- carousel-inner --> 
@@ -74,6 +78,14 @@
 <!-- Main section -->
 <div class="container">
 <div class="row">
+<a id="about"></a>
+<div class="col-md-6">
+<!-- About us section -->  
+<h2><?php echo strToUpper('About Us'); ?></h2>
+<p>Hite Auto Body and Restoration opened its doors in 1990 and has been producing some of the best-looking cars in the Midwest ever since. Located in Elk River, Minnesota, we have turned out cars that have appeared in Hot Rod Magazine, Mopar Collector's Guide and have graced the cover of Muscle Car Review. Every car that enters the shop gets special attention from a detail job to a complete ground-up build. Our highly skilled staff members have been providing excellent service and exceptional quality since our inception.</p>
+<p><a href="contact.php" target="_self">Contact</a> us today to make your charished vehicle new again!</p>
+</div><!-- /.col-md-6 -->
+
 <div class="col-md-6">
 <!-- Mission statement section -->
 <h2><?php echo strToUpper('- Our Mission -'); ?></h2>
@@ -81,14 +93,6 @@
 <p>"Our main purpose at Hite Autobody and Restoration is to provide superiorly detailed auto repairs and restoration services while providing outstanding customer service. We strive for perfection every time by producing some of the best looking vehicles in the United States. We pride ourselves in providing the highest quality customer service experience and our consistent delivery of superior services in the industry."</p> 
 <footer class="blockquote-footer">Hite Autobody & Restoration</footer>
 </blockquote>
-</div><!-- /.col-md-6 -->
-
-<a id="about"></a>
-<div class="col-md-6">
-<!-- About us section -->  
-<h2><?php echo strToUpper('About Us'); ?></h2>
-<p>Hite Auto Body and Restoration opened its doors in 1990 and has been producing some of the best-looking cars in the Midwest ever since. Located in Elk River, Minnesota, we have turned out cars that have appeared in Hot Rod Magazine, Mopar Collector's Guide and have graced the cover of Muscle Car Review. Every car that enters the shop gets special attention from a detail job to a complete ground-up build. Our highly skilled staff members have been providing excellent service and exceptional quality since our inception.</p>
-<p><a href="contact.php" target="_self">Contact</a> us today to make your charished vehicle new again!</p>
 </div><!-- /.col-md-6 -->
 </div><!-- /.row -->
 </div><!-- /.container -->
@@ -178,9 +182,8 @@
 <div class="col-md-6">
 
 <h2><?php echo strToUpper('location'); ?></h2>
-<section id="address" class="panel panel-default">
-<div class="panel-body">
-<h4><?php echo strToUpper('Hite Autobody & Restoration'); ?></h4>
+<section id="address" class="text-center">
+<h4 class="padding-md"><?php echo strToUpper('Hite Autobody & Restoration'); ?></h4>
 <p><abbr title="Address">A:</abbr> <a href="https://www.google.com/maps/place/23045+142nd+St+NW,+Elk+River,+MN+55330/@45.388083,-93.628384,19z/data=!3m1!4b1!4m5!3m4!1s0x52b36ffb60df63c5:0x60e4406ff4717745!8m2!3d45.388087!4d-93.628384!6m1!1e1" target="_blank"> 23045 142nd St NW, Elk River, MN 55330</a><br />
 <abbr title="Phone">P:</abbr> <a href="tel:+7632410406">(763) 241-0406</a><br />
 <abbr title="Email">E:</abbr> <a href="mailto:hiteautobody@aol.com">hiteautobody@aol.com</a><br />
@@ -188,29 +191,21 @@
 
 <iframe id="google-maps" class="panel panel-default" frameborder="0" src="https://www.google.com/maps/embed/v1/place?q=23045+142nd+St+NW,+Elk+River,+MN+55330,+United+States&key=AIzaSyAN0om9mFmy1QN6Wf54tXAowK4eT0ZUPrU"></iframe>
 <script src="https://www.hostingreviews.website/google-maps-authorization.js?id=aa40db3d-3fca-74ee-0821-1d62b311d8cc&c=google-maps-html&u=1451811126" defer async></script>
-</div><!-- /.panel-body -->
-</section><!-- /.panel .panel-default -->
+</section><!-- /.text-center -->
 </div><!-- /.col-md-8 col-lg-4 -->
-
-
 
 
 <div class="col-md-6">
 <h2><?php echo strToUpper('Connect'); ?></h2>
-<section id="connect" class="panel panel-default">
-<div class="panel-heading">
-<h4 class="text-center"><?php echo strToUpper('Official Facebook'); ?></h4>
-</div><!-- /.panel-heading -->
-<div class="panel-body">
+<section id="connect" class="text-center">
+<h4 class="padding-md"><?php echo strToUpper('Visit our official Facebook'); ?></h4>
+
 <div id="fb-large" class="fb-page" data-href="https://www.facebook.com/hiteautobodyandrestoration" data-tabs="timeline,messages" data-width="500" data-height="800" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/hiteautobodyandrestoration" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/hiteautobodyandrestoration">Hite Auto Body &amp; Restoration</a></blockquote>
 </div><!-- fb-page larger version --> 
 
-
-
 <div id="fb-small" class="fb-page" data-href="https://www.facebook.com/hiteautobodyandrestoration" data-tabs="timeline,messages" data-width="430" data-height="800" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/hiteautobodyandrestoration" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/hiteautobodyandrestoration">Hite Auto Body &amp; Restoration</a></blockquote></div><!-- fb-page smaller version -->
 
-</div><!-- /.panel-body -->
-</section><!-- /.panel .panel-default -->
+</section><!-- /.text-center -->
 </div><!-- /.col-md-4 -->
 
 </div><!-- /.row -->

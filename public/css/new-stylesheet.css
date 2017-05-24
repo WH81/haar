@@ -4,6 +4,7 @@
 /*--------------------------------------------------------------------
 	CSS Resets - Global
 ----------------------------------------------------------------------*/	  
+/*
 * {
 	margin: 0; 
 	padding: 0;
@@ -11,14 +12,14 @@
 	border: 0 none;
 	outline: 0;
 }
+*/
 
 /*--------------------------------------------------------------------
 	Document / Sticky Footer sections - Global
 ----------------------------------------------------------------------*/	  
 html, body {
 	        height: 100%;
-			overflow-x: hidden;
-			font-size: 100%;
+			font-size: 16px;
            }
 
 													  
@@ -26,17 +27,20 @@ html, body {
 	           min-height: 100%;
 		       height: auto !important;
 	           height: 100%;
-	           margin: 0 auto -210px;
+	           margin: 0 auto -210px;  
               }
 		 
 #contentWrapper {
 	              max-width: 1200px;
 				  width: 100%;
-				  overflow: auto;
-				  margin: 0 auto;
-				  background-color: rgba(13,13,13,.75);
+				  /* Added height and -210px to margin to this div */
+				  min-height: 100%;
+		       	  height: auto !important;
+	              height: 100%;
+	              margin: 0 auto 210px;  
+				  background-color: rgba(13,13,13,0.7);
 				  border-left: 2px solid #000;
-			 	  border-right: 2px solid #000;
+			 	  border-right: 2px solid #000; 
 				}
 		
 #noOverlap {
@@ -48,12 +52,7 @@ html, body {
 #address > .panel-heading, #connect > .panel-heading { 
 													   background-color: transparent; 
 													   border: none; 
-<<<<<<< HEAD
-                                                      }
-													  
-=======
-                                                      }													  
->>>>>>> 93da7e459228661b49221e9cdbb4c09466fa3e56
+													 }
 
 /*--------------------------------------------------------------------
 	Panels - Global
@@ -65,8 +64,14 @@ html, body {
 	   }
 
 .panel-heading {
-	             background: rgba(224,224,224,1); border-radius: 5px;
+	             background-color: rgba(224,224,224,1); 
+				 border-radius: 5px 5px 0 0;
 			   }
+
+.panel-body { 
+			  border: 1px solid #E0E0E0;
+			  background-color: transparent;
+			}
 
 
 /*--------------------------------------------------------------------
@@ -112,8 +117,22 @@ textarea {
 		  width: auto;
 		  width: 100% !important;
 		}	
-		
-	 
+
+/*-------------------------------------------------------------
+	Facebook section - Global
+------------------------------------------------------------*/	
+.padding-md { padding: 1em 0; }
+	
+/*-------------------------------------------------------------
+	Form success message - Global
+------------------------------------------------------------*/		 
+#message-placeholder { 
+					  font-size: 1em;
+					  color: #e0e0e0;
+					  display: none; 
+					  text-align: center; 
+					 }	
+	
 	 
 /*----------------------------------------------------------
 	 Footer - Global
@@ -129,7 +148,7 @@ footer {
 	      margin: 0 auto;
           width: 100%;
 	      background-color: rgba(224,224,224,1);
-          border-top: 1px inset rgba(224,224,224,1);
+          border-top: 1px inset rgba(0,0,0,1);
         }
 		
 footer img {
@@ -193,10 +212,10 @@ footer.blockquote-footer {
 
 /* Makes the section headers go below the fixed navigation bar. */				
 :target:before {
-content:"";
-display:block;
-height:50px; /* fixed header height*/
-margin:-50px 0 0; /* negative fixed header height */
+	content:"";
+	display:block;
+	height:50px; /* fixed header height*/
+	margin:-50px 0 0; /* negative fixed header height */
 }				
 				
 #noOverlap {
@@ -238,14 +257,14 @@ h2 {
 ----------------------------------------------------------------------*/
 .bgimage { 
 		  background:none;
-		 /* background-image:url(../images/general/diamond02-mobile.jpg);
+		  background-image:url(../images/general/diamond02-mobile.jpg);
 		  background-position:center top;
-		  border-bottom: 1px solid #e0e0e0; */
+		  border-bottom:1px solid #e0e0e0;
 		 }
 
 .logo {
 		margin:0 auto;
-		padding:1em;
+		padding:1.3em;
 		max-width:320px;
 		width:100%;
 		min-width:200px;
@@ -424,20 +443,32 @@ iframe {
 
 
 /*--------------------------------------------------------------------
-	Contact form radio button section - Mobile
+	Contact form section - Mobile
 ----------------------------------------------------------------------*/				
+fieldset { 
+          margin: 1em 0em;
+	     }
+
 .radio {
-	    padding-left: 1.5em;
+	    padding-left:1.5em; 
 	   }
 
 
+/*-------------------------------------------------------------
+	Form success message - Global
+------------------------------------------------------------*/		 
+#message-placeholder { 
+					  color:#e0e0e0;
+					  display:none; 
+					  text-align:center; 
+					 }	
 
 
 /*----------------------------------------------------------
 	 Footer - Mobile
 -----------------------------------------------------------*/
 #footer {
-         height: 325px; /* Set the fixed height of the footer here */
+         height:325px; /* Set the fixed height of the footer here */
         }
 		
 footer img {
@@ -562,7 +593,7 @@ h2 {
 .bgimage { 
 		  background-image:url(../images/general/diamond02-mobile.jpg);
 		  background-position:center top;
-		  border-bottom: 1px solid #e0e0e0;
+		  border-bottom:1px solid #e0e0e0;
 		 }
 
 .logo {
@@ -746,6 +777,16 @@ legend {
 	   }
 
 
+/*-------------------------------------------------------------
+	Form success message - Global
+------------------------------------------------------------*/		 
+#message-placeholder { 
+					  color: #e0e0e0;
+					  display: none; 
+					  text-align: center; 
+					 }	
+
+
 /*----------------------------------------------------------
 	 Footer styles - Tablets
 -----------------------------------------------------------*/		  	      
@@ -858,10 +899,11 @@ blockquote, p {
 				font-size:1em;
               }																								   
 																					  														 
-<<<<<<< HEAD
+
 h2 { 
     padding-top: 2em; 
-=======
+}
+
 h2 { 																  
 	padding: 1em;
 	padding-bottom: 0.7em;
@@ -870,7 +912,6 @@ h2 {
 	border-bottom: 3px outset #e0e0e0;
 	background-color: rgba(255,255,255,0.1);
 	text-shadow: 2px 2px 2px rgba(0,0,0,1);
->>>>>>> 93da7e459228661b49221e9cdbb4c09466fa3e56
    }														 
 	   
 .glyphicon { 
@@ -1065,6 +1106,17 @@ iframe {
 	    padding-left: 1.5em;
 	   }
 	
+	
+/*-------------------------------------------------------------
+	Form success message - Global
+------------------------------------------------------------*/		 
+#message-placeholder { 
+					  color: #e0e0e0;
+					  display: none; 
+					  text-align: center; 
+					 }	
+
+	
 
 /*----------------------------------------------------------
 	 Footer - Medium Desktops
@@ -1120,7 +1172,7 @@ footer a:active {
          		}	  
 
 hr.footer-color-adjustment { 
-							 border-top: 1px inset rgba(0,0,0,0.3); 
+							 border-top:1px inset rgba(0,0,0,0.3); 
 						   }			 
 #copyright { 
     		font-size:.8em;
@@ -1138,7 +1190,7 @@ hr.footer-color-adjustment {
 	 Navigation section - Medium Desktops
 -----------------------------------------------------------*/		 
 nav > .container-fluid { 
-                         width: 1200px; 
+                         width:1200px; 
 					   }
 
 
@@ -1163,6 +1215,6 @@ p.carousel-caption-paragraph {
 		  }
 		  
 #fb-large {
-	       display: block;
+	       display:block;
 		  }
 }

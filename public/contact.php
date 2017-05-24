@@ -1,7 +1,4 @@
-<?php 
-$errors = [];
-$missing = [];
-?>
+
 
 <?php include '../includes/layout/header.php'; ?>
 <!-- closing heading section -->
@@ -10,11 +7,10 @@ $missing = [];
 <div class="container">
 <!-- action="../includes/form/process_mail.php" -->
 
-<?php if ($errors || $missing) : ?>
-<p class="warning">Please fix the item(s) indicated.</p>
-<?php endif; ?>
+<div id="message-placeholder"></div>
 
-<form data-toggle="validator" role="form" action="<?= $_SERVER['PHP_SELF']; ?>" enctype="application/x-www-form-urlencoded" method="post">
+<div id="form-container">
+<form id="contact-form" data-toggle="validator" role="form" enctype="application/x-www-form-urlencoded">
 <section class="row">
 <div class="col-md-6">
 
@@ -23,14 +19,10 @@ $missing = [];
 
 <!-- Name section -->
 <div class="form-group has-feedback">
-<label for="inputName" class="control-label">Name *
-<?php if ($missing && in_array('name', $missing)) : ?>
-<span class="warning">Please enter your first and last name.</span>
-<?php endif; ?>
-</label>
+<label for="inputName" class="control-label">Name *</label>
 <div class="input-group">
 <span class="input-group-addon"><span class="glyphicon glyphicon-info-sign"></span></span>
-<input type="text" class="form-control" id="inputName" placeholder="Your First and Last Name" data-error="Please enter your first and last name." name="name" required>
+<input type="text" class="form-control" id="inputName" placeholder="Your first and last name" data-error="Please enter your first and last name." name="name" required>
 </div>
 <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
 <div class="help-block with-errors"></div>
@@ -43,7 +35,7 @@ $missing = [];
 <label for="inputEmail" class="control-label">Email *</label>
 <div class="input-group">
 <span class="input-group-addon"><span class="glyphicon glyphicon-envelope"></span></span>
-<input type="email" class="form-control" id="inputEmail" placeholder="Your Email Address" data-error="Please enter your valid email address." name="email" required>
+<input type="email" class="form-control" id="inputEmail" placeholder="Your email address" data-error="Please enter your valid email address." name="email" required>
 </div>
 <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
 <div class="help-block with-errors"></div>
@@ -57,7 +49,7 @@ $missing = [];
 <label for="inputPhone" class="control-label">Phone *</label>
 <div class="input-group">
 <span class="input-group-addon"><span class="glyphicon glyphicon-phone"></span></span>
-<input type="text" pattern="\d{3}[\-]\d{3}[\-]\d{4}" maxlength="12" class="form-control" id="inputPhone" data-error="Please enter your valid phone number formatted as: 000-000-0000" placeholder="Your Phone Number" name="phone" required>
+<input type="text" pattern="\d{3}[\-]\d{3}[\-]\d{4}" maxlength="12" class="form-control" id="inputPhone" data-error="Please enter your valid phone number formatted as: 000-000-0000" placeholder="Your phone number formatted as: 000-000-0000" name="phone" required>
 </div>
 <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
 <div class="help-block with-errors"></div>
@@ -155,13 +147,13 @@ $missing = [];
 <label for="inputCustomer" class="control-label">Customer Type *</label>
 <div class="radio">
 <label>
-<input type="radio" name="customer" data-error="Please enter if you are new or returning customer." required>
+<input type="radio" name="customer" value="New customer" data-error="Please enter if you are new or returning customer." required>
 New Customer
 </label>
 </div><!-- /.radio section -->
 <div class="radio">
 <label>
-<input type="radio" name="customer" data-error="Please enter if you are new or returning customer." required>
+<input type="radio" name="customer" value="Returning customer" data-error="Please enter if you are new or returning customer." required>
 Returning Customer
 </label>
 <div class="help-block with-errors"></div><!-- /.help-block with-errors -->
@@ -175,7 +167,7 @@ Returning Customer
 <label for="inputComments" class="control-label">Comments *</label>
 <div class="input-group">
 <span class="input-group-addon"><span class="glyphicon glyphicon-comment"></span></span>
-<textarea type="text" class="form-control" id="inputComments" placeholder="Your Comments" data-error="Please enter your comments" aria-describedby="commentsStatus" name="comments" required></textarea>
+<textarea type="text" class="form-control" id="inputComments" placeholder="Your comments" data-error="Please enter your comments" aria-describedby="commentsStatus" name="comments" required></textarea>
 </div><!-- /.input-group -->
 <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
 <div class="help-block with-errors"></div><!-- /.help-block with-errors -->
@@ -185,25 +177,14 @@ Returning Customer
 </section><!-- /.row -->
 
 <div class="form-group">
-<button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-send"></span>Send</button>
+<button id="send" type="submit" class="btn btn-default"><span class="glyphicon glyphicon-send"></span>Send</button>
 <button type="reset" class="btn btn-default"><span class="glyphicon glyphicon-trash"></span>Clear</button>
 </div><!-- /.form-group -->
 
 </form>
+</div> <!-- /.form-container -->
 </div> <!-- /.container -->
-    
-<?php /*?><pre>
-	<?php
-        if ($_GET) {
-        echo 'Content of the $_GET array:<br>';
-        print_r($_GET);
-        } elseif ($_POST) {
-        echo 'Content of the $_POST array:<br>';
-		print_r($_POST);
-        }
-    ?>
-</pre>    
-<?php */?>    
+  
 <?php include '../includes/layout/footer.php'; ?> 
     
     
