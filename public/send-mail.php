@@ -12,7 +12,11 @@ $comments = $_POST['comments']; // required
 $to = 'example@yahoo.com';
 $subject = 'Service inquiry from ' . $name . '.';
 $message = '<html><body>';
+<<<<<<< HEAD
 $message .= '<img src="http://www.example.com/qa/qa/public/images/logos/logo.svg" alt="example Autobody and Restoration">';
+=======
+$message .= '<img class="logo img-responsive" src="images/logos/logo.svg" alt="haar">';
+>>>>>>> 158e1e533951130d2589e3af4cc929f49f4bda61
 $message .= '<table style="border-color: #666;" cellpadding="5">';
 $message .= '<tr style="background: #e0e0e0;"><td><strong>Name:</strong></td><td>' . strip_tags($_POST['name']) . '</td></tr>';
 $message .= '<tr><td><strong>Email:</strong></td><td>' . strip_tags($_POST['email']) . '</td></tr>';
