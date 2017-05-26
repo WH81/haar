@@ -12,22 +12,45 @@ $comments = $_POST['comments']; // required
 $to = 'example@yahoo.com';
 $subject = 'Service inquiry from ' . $name . '.';
 $message = '<html><body>';
-<<<<<<< HEAD
-$message .= '<img src="http://www.example.com/qa/qa/public/images/logos/logo.svg" alt="example Autobody and Restoration">';
-=======
-$message .= '<img class="logo img-responsive" src="images/logos/logo.svg" alt="haar">';
->>>>>>> 158e1e533951130d2589e3af4cc929f49f4bda61
-$message .= '<table style="border-color: #666;" cellpadding="5">';
-$message .= '<tr style="background: #e0e0e0;"><td><strong>Name:</strong></td><td>' . strip_tags($_POST['name']) . '</td></tr>';
-$message .= '<tr><td><strong>Email:</strong></td><td>' . strip_tags($_POST['email']) . '</td></tr>';
-$message .= '<tr><td><strong>Phone:</strong></td><td>' . strip_tags($_POST['phone']) . '</td></tr>';
-$message .= '<tr><td><strong>Make:</strong></td><td>' . strip_tags($_POST['make']) . '</td></tr>';
-$message .= '<tr><td><strong>Model:</strong></td><td>' . strip_tags($_POST['model']) . '</td></tr>';
-$message .= '<tr><td><strong>Year:</strong></td><td>' . strip_tags($_POST['year']) . '</td></tr>';
-$message .= '<tr><td><strong>Customer:</strong></td><td>' . strip_tags($_POST['customer']) . '</td></tr>';
-$message .= '<tr><td><strong>Comments:</strong></td><td>' . strip_tags($_POST['comments']) . '</td></tr>';
+$message .= '<img style="text-align:center;width:100%;height:auto;margin:0 auto;" src="http://www.example.com/qa/qa/public/images/logos/logo.svg" alt="example Autobody and Restoration">';
+$message .= '<h2 style="text-align:center;background:rgba(0,0,0,0.05);border-bottom:1px solid #e0e0e0;padding:5px;font-size:110%;">Customer Form Data</h2>';
+
+$message .= '<table style="text-align:left;margin:0 auto;width:100%">';
+
+$message .= '<tr style="background:rgba(0,0,0,0.02);line-height:175%;">
+<td style="border:1px solid #e0e0e0;padding:5px;"><strong>Name:</strong></td>
+<td style="border:1px solid #e0e0e0;padding:5px;">' . strip_tags($_POST['name']) . '</td></tr>';
+
+$message .= '<tr style="background:rgba(0,0,0,0.05);line-height:175%;">
+<td style="border:1px solid #e0e0e0;padding:5px;"><strong>Email:</strong></td>
+<td style="border:1px solid #e0e0e0;padding:5px;">' . strip_tags($_POST['email']) . '</td></tr>';
+
+$message .= '<tr style="background:rgba(0,0,0,0.02);line-height:175%;">
+<td style="border:1px solid #e0e0e0;padding:5px;"><strong>Phone:</strong></td>
+<td style="border:1px solid #e0e0e0;padding:5px;">' . strip_tags($_POST['phone']) . '</td></tr>';
+
+$message .= '<tr style="background:rgba(0,0,0,0.05);line-height:175%;">
+<td style="border:1px solid #e0e0e0;padding:5px;"><strong>Make:</strong></td>
+<td style="border:1px solid #e0e0e0;padding:5px;">' . strip_tags($_POST['make']) . '</td></tr>';
+
+$message .= '<tr style="background:rgba(0,0,0,0.02);line-height:175%;">
+<td style="border:1px solid #e0e0e0;padding:5px;"><strong>Model:</strong></td>
+<td style="border:1px solid #e0e0e0;padding:5px;">' . strip_tags($_POST['model']) . '</td></tr>';
+
+$message .= '<tr style="background:rgba(0,0,0,0.05);line-height:175%;">
+<td style="border:1px solid #e0e0e0;padding:5px;"><strong>Year:</strong></td>
+<td style="border:1px solid #e0e0e0;padding:5px;">' . strip_tags($_POST['year']) . '</td></tr>';
+
+$message .= '<tr style="background:rgba(0,0,0,0.02);line-height:175%;">
+<td style="border:1px solid #e0e0e0;padding:5px;"><strong>Customer:</strong></td>
+<td style="border:1px solid #e0e0e0;padding:5px;">' . strip_tags($_POST['customer']) . '</td></tr>';
+
+$message .= '<tr style="background:rgba(0,0,0,0.05);line-height:175%;">
+<td style="border:1px solid #e0e0e0;padding:5px;"><strong>Comments:</strong></td>
+<td style="border:1px solid #e0e0e0;padding:5px;">' . strip_tags($_POST['comments']) . '</td></tr>';
 $message .= '</table>';
 $message .= '</body></html>';
+
 $from = 'example <example@example.com>';
 
 /*
