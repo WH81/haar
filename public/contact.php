@@ -49,7 +49,7 @@
 <label for="inputPhone" class="control-label">Phone *</label>
 <div class="input-group">
 <span class="input-group-addon"><span class="glyphicon glyphicon-phone"></span></span>
-<input type="text" pattern="\d{3}[\-]\d{3}[\-]\d{4}" maxlength="12" class="form-control" id="inputPhone" data-error="Please enter your valid phone number formatted as: 000-000-0000" placeholder="Your phone number formatted as: 000-000-0000" name="phone" required>
+<input type="text" pattern="\d{3}[\-]\d{3}[\-]\d{4}" maxlength="12" class="form-control" id="inputPhone" data-error="Please enter your valid phone number formatted as: 000-000-0000" placeholder="Your phone number" name="phone" required>
 </div>
 <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
 <div class="help-block with-errors"></div>
