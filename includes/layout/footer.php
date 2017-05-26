@@ -8,7 +8,7 @@
 <div class="clearfix">
 <div class="col-xs-12 col-sm-6">
 <a title="Back to top" href="index.php"><img class="center-block img-responsive" src="images/logos/hite-footer-logo.svg" alt="Hite Autobody and Restoration"></a> 
-</div><!-- col-xs-12 col-sm-6 col-md-6 col-lg-6 -->
+</div><!-- col-xs-12 col-sm-6 -->
 
 <div class="col-xs-12 col-sm-6">
 <nav id="footer-vertical-line" role="navigation"> 
@@ -27,10 +27,7 @@
 <p id="copyright"><?= hite_copyright(1990); ?> Hite Autobody and Restoration. All rights reserved.</p>
 </footer>
 
-<!-- jQuery -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-<!-- Minified JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
 <!-- Contact form validator  -->
 <script src="js/form-validation/validator.min.js"></script>
 <!-- Customer JavaScript  -->

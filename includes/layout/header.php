@@ -8,6 +8,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <!-- Viewport -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- jQuery -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<!-- Minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
     <!-- Minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">    
     <!-- Optional IE8 Support -->
@@ -21,6 +25,8 @@
     <link rel="stylesheet" href="css/new-stylesheet.css">
     
     <script>
+		$(document).ready(function() {
+			
     	//Variable to hold request
 		var request;
 		
@@ -36,33 +42,33 @@
 				}
 				
 			// Setup some local variables
-			var $form = $(this);	
+			var form = $(this);	
 		
 			// Let's select and cache all the fields
-			var $inputs = $form.find("input, select, button, textarea");
+			var inputs = form.find("input, select, button, textarea");
 			
 			// Serialize the data in the form
-			var serializedData = $form.serialize();
+			var serializedData = form.serialize();
 			
 			// Let's disable the inputs for the duration of the Ajax request.
 			// Note: we disable elements AFTER the form data has been serialized.
 			// Disabled form elements will not be serialized.
-			$inputs.prop("disabled", true);
+			inputs.prop("disabled", true);
 			
-			// Fire off the request to /form.php
+			// Fire off the request to send-mail.php
 			$.ajax({
-				url: "process_mail.php",
+				url: "send-mail.php",
 				type: "post",
 				data: serializedData,
 				success: function(result){
-					// $("#message_placeholder").html(result);
-					alert('Success!');
+					$('#form-container').hide();
+					$("#message-placeholder").show().html(result);
 					}
 				});
-				
-			}
-    
+			});
+         });
     </script>
+   
     <title>Hite Autobody and Restoration | Official Site</title>
 </head>
 
