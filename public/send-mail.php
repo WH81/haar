@@ -9,13 +9,13 @@ $year = $_POST['year'];
 $customer = $_POST['customer']; // required
 $comments = $_POST['comments']; // required
 
-$to = 'Wayne W. Hite <waynehite@yahoo.com>';
+$to = 'Hite <hite@yahoo.com>';
 $subject = 'Service inquiry from ' . $name . '.';
 
 
 $message = '<html><body style="background-color:rgba(0,0,0,0.05);width:100%;padding:5px;">';
 $message .= '<div style="margin:0 auto;text-align:center;background-color:rgba(224,224,224,0.05);">';
-$message .= '<img style="text-align:center;width:100%;max-width:375px;height:auto;margin:0 auto;" src="http://www.hiteautobodyandrestoration.com/qa/qa/public/images/logos/hite-footer-logo.svg" alt="Hite Autobody and Restoration">';
+$message .= '<img style="text-align:center;width:100%;max-width:375px;height:auto;margin:0 auto;" src="http://www.autobodyandrestoration.com/qa/qa/public/images/logos/hite-footer-logo.svg" alt="Hite Autobody and Restoration">';
 $message .= '<h2 style="text-align:center;background:rgba(0,0,0,0.05);border-bottom:1px solid #e0e0e0;padding:5px;font-size:110%;">Customer Form Data</h2>';
 $message .= '<table style="text-align:left;margin:0 auto;width:100%;max-width:575px;">';
 $message .= '<tr style="background:rgba(0,0,0,0.02);line-height:175%;"><td style="border:1px solid #e0e0e0;padding:5px;"><strong>Name:</strong></td><td style="border:1px solid #e0e0e0;padding:5px;">' . strip_tags($_POST['name']) . '</td></tr>';
@@ -37,13 +37,12 @@ $headers[] = 'MIME-Version: 1.0';
 $headers[] = 'Content-type: text/html; charset=iso-8859-1';
 
 // Additional headers
-// $headers[] = 'To: Wayne Hite <waynehite@yahoo.com>';
-$headers[] = 'From: Hite Autobody & Restoration Site Visitor <hiteauto@hiteautobodyandrestoration.com>';
+$headers[] = 'From: Autobody & Restoration Site Visitor <auto@hiteautobodyandrestoration.com>';
 $headers[] = 'Reply-To: ' . $email;
    
 $result = mail($to, $subject, $message, implode("\r\n", $headers));
  
  
  
-echo $result ? '<h3>Hello, ' . $name . '.</h3>' . '<h4>Thank you for contacting Hite Autobody & Restoration!</h4>' . '<h4>We have received your message and will reply as soon as possible.</h4>' : '<h4>Sorry, your mail has not sent. Please try again.</h4>';
+echo $result ? '<h3>Hello, ' . $name . '.</h3>' . '<h4>Thank you for contacting Autobody & Restoration!</h4>' . '<h4>We have received your message and will reply as soon as possible.</h4>' : '<h4>Sorry, your mail has not sent. Please try again.</h4>';
 
